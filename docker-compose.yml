@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  database:
+    image: postgres:14
+    restart: always
+    env_file:
+      - db.env
+  shell:
+    build: .
