@@ -10,7 +10,4 @@ COPY . /app
 # install backend packages
 RUN pip3 install -r requirements.txt
 
-
-# host site
-# CMD python3 app.py
 CMD cd /app && python3 app/main.py
