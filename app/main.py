@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
         # Query
         teacher_john = session.query(Teacher).filter_by(name="John").first()
-        johns_students = teacher_john = teacher_john.students
+        johns_students = teacher_john.students
         print([s.name for s in johns_students])
         # ['Kyle', 'Lisa', 'Elise']
 
